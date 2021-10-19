@@ -28,10 +28,7 @@ class emp
 
 public void read()
  {
-  Scanner sc= new Scanner(System.in);
-  String name=sc.nextLine();
-  int age=sc.nextInt();
-  double salary=sc.nextDouble();
+  System.out.println("Employee Details :- ");
  }
 
  public void show()
@@ -48,6 +45,7 @@ class showEmployeeDetails
   emp e1= new emp();
   emp e2= new emp("Shriya",24,35000);
   emp e3= new emp(e2);
+  e1.read();
   e1.show();
   e2.show();
   e3.show();

@@ -26,14 +26,12 @@ class Rational
 
  public void read()
  {
-  Scanner sc= new Scanner(System.in);
-  int num=sc.nextInt();
-  int deno=sc.nextInt();
+ System.out.println("Rational number=");
  }
 
  public void show()
  {
-  System.out.println("Rational number="+num+"/"+deno);
+  System.out.println(num+"/"+deno);
  }
 }
 
@@ -45,8 +43,12 @@ class showRational
   Rational r1= new Rational();
   Rational r2= new Rational(5,10);
   Rational r3= new Rational(r2);
+  r1.read();
   r1.show();
+  r2.read();
   r2.show();
+  r3.read();
   r3.show();
+
  }
 }
